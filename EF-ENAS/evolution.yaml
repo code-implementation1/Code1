@@ -1,0 +1,27 @@
+# Builtin Configurations(DO NOT CHANGE THESE CONFIGURATIONS unless you know exactly what you are doing)
+is_distributed: False
+# Url for modelarts
+data_url: ""
+train_url: ""
+# Path for local
+device_target: "Ascend"
+rank: 0
+group_size: 1
+# ==============================================================================
+# options
+seed: 0
+batch_size: 128
+epoch_size: 10
+epochs: 200
+
+learning_rate: 0.0005
+data_path: "./rectanglesImages"
+ckpt_save_dir: "./the_best_model/"
+architecture_dir: "./the_best_model/architecture"
+history: "./history"
+output_path: "./history/cache"
+individual_history_path: "./history/individual_history"
+offspring_path: "./history/offspring"
+
+file_name: "./the_best_model/export.ckpt"
+file_format: "MINDIR"
